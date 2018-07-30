@@ -1,0 +1,20 @@
+# vim artifacts
+**.swh
+**.swi
+**.swj
+**.swk
+**.swl
+**.swm
+**.swn
+**.swo
+**.swp
+**.swq
+
+config/tmux/resurrect
+config/vim/common/undo
+config/vim/common/viminfo
+config/vim/common/.netrwbook
+config/vim/common/.netrwhist
+config/vim/common/.VimballRecord
+
+

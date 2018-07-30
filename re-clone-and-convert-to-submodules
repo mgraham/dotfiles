@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ORIGINAL_ROOT=~/.config/dotfiles-bork/config/vim/common/bundle
+NEW_ROOT=~/.config/dotfiles/config/vim/common/bundle
+DEPTH=1
+
+
+# for d in `find ~/.config/dotfiles/dotbot -maxdepth 0 -mindepth 0 -type d`
+# for d in `find ~/.config/dotfiles/config/vim/common/bundle -maxdepth 1 -mindepth 1 -type d`
+# for d in `find ~/.config/dotfiles/config/tmux/plugins -maxdepth 1 -mindepth 1 -type d`
+for d in `find $ORIGINAL_ROOT -maxdepth 1 -mindepth 1 -type d`
+do
+    echo $d
+    pushd $d
+    pwd
+    export url=$(git config --get remote.origin.url)
+    popd
+    pushd $NEW_ROOT
+    echo git submodule add $url 
+    git submodule add $url
+    popd
+done

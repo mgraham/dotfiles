@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# for d in `find ~/.config/dotfiles/dotbot -maxdepth 0 -mindepth 0 -type d`
+# for d in `find ~/.config/dotfiles/config/vim/common/bundle -maxdepth 1 -mindepth 1 -type d`
+# for d in `find ~/.config/dotfiles/config/tmux/plugins -maxdepth 1 -mindepth 1 -type d`
+for d in `find ~/.config/dotfiles/config/zprezto -maxdepth 0 -mindepth 0 -type d`
+do
+    echo $d
+    pushd $d
+    pwd
+    export url=$(git config --get remote.origin.url)
+    popd
+    export cwd=`pwd`
+    # export relative_path=$(python -c "import os.path; print os.path.relpath('$d', '$cwd')")
+    export relative_path=$(ruby -e "require 'pathname'; puts Pathname.new('$d').relative_path_from Pathname.new('$cwd')")
+    echo abs: $d, rel: $relative_path, url: $url
+    echo git submodule add $url $d
+    git submodule add $url $d
+done

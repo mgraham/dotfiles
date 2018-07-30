@@ -1,0 +1,411 @@
+[submodule "config/vim/common/bundle/ack.vim"]
+	path = config/vim/common/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "config/vim/common/bundle/AnsiEsc.vim"]
+	path = config/vim/common/bundle/AnsiEsc.vim
+	url = https://github.com/berdandy/AnsiEsc.vim
+[submodule "config/vim/common/bundle/AsyncCommand"]
+	path = config/vim/common/bundle/AsyncCommand
+	url = https://github.com/idbrii/AsyncCommand
+[submodule "config/vim/common/bundle/CamelCaseMotion"]
+	path = config/vim/common/bundle/CamelCaseMotion
+	url = https://github.com/bkad/CamelCaseMotion.git
+[submodule "config/vim/common/bundle/Command-T"]
+	path = config/vim/common/bundle/Command-T
+	url = https://github.com/wincent/Command-T.git
+[submodule "config/vim/common/bundle/csv.vim"]
+	path = config/vim/common/bundle/csv.vim
+	url = https://github.com/chrisbra/csv.vim.git
+[submodule "config/vim/common/bundle/fzf.vim"]
+	path = config/vim/common/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "config/vim/common/bundle/gitv"]
+	path = config/vim/common/bundle/gitv
+	url = https://github.com/gregsexton/gitv
+[submodule "config/vim/common/bundle/hexman.vim"]
+	path = config/vim/common/bundle/hexman.vim
+	url = https://github.com/vim-scripts/hexman.vim
+[submodule "config/vim/common/bundle/jellybeans.vim"]
+	path = config/vim/common/bundle/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "config/vim/common/bundle/JumpToLastOccurrence"]
+	path = config/vim/common/bundle/JumpToLastOccurrence
+	url = https://github.com/vim-scripts/JumpToLastOccurrence.git
+[submodule "config/vim/common/bundle/linediff.vim"]
+	path = config/vim/common/bundle/linediff.vim
+	url = https://github.com/AndrewRadev/linediff.vim.git
+[submodule "config/vim/common/bundle/neomru.vim"]
+	path = config/vim/common/bundle/neomru.vim
+	url = https://github.com/Shougo/neomru.vim.git
+[submodule "config/vim/common/bundle/snipmate.vim"]
+	path = config/vim/common/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "config/vim/common/bundle/targets.vim"]
+	path = config/vim/common/bundle/targets.vim
+	url = https://github.com/wellle/targets.vim
+[submodule "config/vim/common/bundle/tcomment_vim"]
+	path = config/vim/common/bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "config/vim/common/bundle/textobj-word-column.vim"]
+	path = config/vim/common/bundle/textobj-word-column.vim
+	url = https://github.com/coderifous/textobj-word-column.vim
+[submodule "config/vim/common/bundle/tmux-complete.vim"]
+	path = config/vim/common/bundle/tmux-complete.vim
+	url = https://github.com/wellle/tmux-complete.vim
+[submodule "config/vim/common/bundle/todo.txt-vim"]
+	path = config/vim/common/bundle/todo.txt-vim
+	url = https://github.com/dbeniamine/todo.txt-vim.git
+[submodule "config/vim/common/bundle/toggle_words.vim"]
+	path = config/vim/common/bundle/toggle_words.vim
+	url = https://github.com/vim-scripts/toggle_words.vim.git
+[submodule "config/vim/common/bundle/unite-alias"]
+	path = config/vim/common/bundle/unite-alias
+	url = https://github.com/tacroe/unite-alias.git
+[submodule "config/vim/common/bundle/unite-colorscheme"]
+	path = config/vim/common/bundle/unite-colorscheme
+	url = https://github.com/ujihisa/unite-colorscheme.git
+[submodule "config/vim/common/bundle/unite-font"]
+	path = config/vim/common/bundle/unite-font
+	url = https://github.com/ujihisa/unite-font.git
+[submodule "config/vim/common/bundle/unite-gem"]
+	path = config/vim/common/bundle/unite-gem
+	url = https://github.com/ujihisa/unite-gem.git
+[submodule "config/vim/common/bundle/unite-help"]
+	path = config/vim/common/bundle/unite-help
+	url = https://github.com/tsukkee/unite-help.git
+[submodule "config/vim/common/bundle/unite-mark"]
+	path = config/vim/common/bundle/unite-mark
+	url = https://github.com/tacroe/unite-mark.git
+[submodule "config/vim/common/bundle/unite-outline"]
+	path = config/vim/common/bundle/unite-outline
+	url = https://github.com/Shougo/unite-outline.git
+[submodule "config/vim/common/bundle/unite-qf"]
+	path = config/vim/common/bundle/unite-qf
+	url = https://github.com/sgur/unite-qf.git
+[submodule "config/vim/common/bundle/unite-rails"]
+	path = config/vim/common/bundle/unite-rails
+	url = https://github.com/basyura/unite-rails.git
+[submodule "config/vim/common/bundle/unite-script-examples"]
+	path = config/vim/common/bundle/unite-script-examples
+	url = https://github.com/hakobe/unite-script-examples.git
+[submodule "config/vim/common/bundle/unite-tag"]
+	path = config/vim/common/bundle/unite-tag
+	url = https://github.com/tsukkee/unite-tag.git
+[submodule "config/vim/common/bundle/unite.vim"]
+	path = config/vim/common/bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim.git
+[submodule "config/vim/common/bundle/vim-abolish"]
+	path = config/vim/common/bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule "config/vim/common/bundle/vim-autoformat-rails"]
+	path = config/vim/common/bundle/vim-autoformat-rails
+	url = https://github.com/KurtPreston/vim-autoformat-rails.git
+[submodule "config/vim/common/bundle/vim-bbye"]
+	path = config/vim/common/bundle/vim-bbye
+	url = https://github.com/moll/vim-bbye.git
+[submodule "config/vim/common/bundle/vim-better-whitespace"]
+	path = config/vim/common/bundle/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "config/vim/common/bundle/vim-blackboard"]
+	path = config/vim/common/bundle/vim-blackboard
+	url = https://github.com/nelstrom/vim-blackboard.git
+[submodule "config/vim/common/bundle/vim-byebug-breakpoints"]
+	path = config/vim/common/bundle/vim-byebug-breakpoints
+	url = https://github.com/kmewhort/vim-byebug-breakpoints.git
+[submodule "config/vim/common/bundle/vim-characterize"]
+	path = config/vim/common/bundle/vim-characterize
+	url = https://github.com/tpope/vim-characterize
+[submodule "config/vim/common/bundle/vim-coffee-script"]
+	path = config/vim/common/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "config/vim/common/bundle/vim-colors-solarized"]
+	path = config/vim/common/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "config/vim/common/bundle/vim-conflicted"]
+	path = config/vim/common/bundle/vim-conflicted
+	url = https://github.com/christoomey/vim-conflicted.git
+[submodule "config/vim/common/bundle/vim-dirvish"]
+	path = config/vim/common/bundle/vim-dirvish
+	url = https://github.com/justinmk/vim-dirvish.git
+[submodule "config/vim/common/bundle/vim-dispatch"]
+	path = config/vim/common/bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+[submodule "config/vim/common/bundle/vim-distinguished"]
+	path = config/vim/common/bundle/vim-distinguished
+	url = https://github.com/Lokaltog/vim-distinguished.git
+[submodule "config/vim/common/bundle/vim-easy-align"]
+	path = config/vim/common/bundle/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "config/vim/common/bundle/vim-easymotion"]
+	path = config/vim/common/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "config/vim/common/bundle/vim-ember-script"]
+	path = config/vim/common/bundle/vim-ember-script
+	url = https://github.com/heartsentwined/vim-ember-script.git
+[submodule "config/vim/common/bundle/vim-endwise"]
+	path = config/vim/common/bundle/vim-endwise
+	url = git://github.com/tpope/vim-endwise.git
+[submodule "config/vim/common/bundle/vim-eunuch"]
+	path = config/vim/common/bundle/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule "config/vim/common/bundle/vim-expand-region"]
+	path = config/vim/common/bundle/vim-expand-region
+	url = https://github.com/terryma/vim-expand-region
+[submodule "config/vim/common/bundle/vim-flipwords"]
+	path = config/vim/common/bundle/vim-flipwords
+	url = https://github.com/mmahnic/vim-flipwords.git
+[submodule "config/vim/common/bundle/vim-fugitive"]
+	path = config/vim/common/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "config/vim/common/bundle/vim-gitgutter"]
+	path = config/vim/common/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "config/vim/common/bundle/vim-hybrid"]
+	path = config/vim/common/bundle/vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid.git
+[submodule "config/vim/common/bundle/vim-indent-object"]
+	path = config/vim/common/bundle/vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object
+[submodule "config/vim/common/bundle/vim-indentwise"]
+	path = config/vim/common/bundle/vim-indentwise
+	url = https://github.com/jeetsukumaran/vim-indentwise.git
+[submodule "config/vim/common/bundle/vim-javascript-syntax"]
+	path = config/vim/common/bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "config/vim/common/bundle/vim-jquery-doc"]
+	path = config/vim/common/bundle/vim-jquery-doc
+	url = https://github.com/lucapette/vim-jquery-doc.git
+[submodule "config/vim/common/bundle/vim-multiple-cursors"]
+	path = config/vim/common/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "config/vim/common/bundle/vim-notmuch-address"]
+	path = config/vim/common/bundle/vim-notmuch-address
+	url = https://github.com/adborden/vim-notmuch-address.git
+[submodule "config/vim/common/bundle/vim-over"]
+	path = config/vim/common/bundle/vim-over
+	url = https://github.com/osyo-manga/vim-over.git
+[submodule "config/vim/common/bundle/vim-qf"]
+	path = config/vim/common/bundle/vim-qf
+	url = https://github.com/romainl/vim-qf.git
+[submodule "config/vim/common/bundle/vim-quicktask"]
+	path = config/vim/common/bundle/vim-quicktask
+	url = https://github.com/aaronbieber/vim-quicktask.git
+[submodule "config/vim/common/bundle/vim-rails"]
+	path = config/vim/common/bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "config/vim/common/bundle/vim-rdoc"]
+	path = config/vim/common/bundle/vim-rdoc
+	url = https://github.com/depuracao/vim-rdoc.git
+[submodule "config/vim/common/bundle/vim-rest-console"]
+	path = config/vim/common/bundle/vim-rest-console
+	url = https://github.com/diepm/vim-rest-console.git
+[submodule "config/vim/common/bundle/vim-rhubarb"]
+	path = config/vim/common/bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "config/vim/common/bundle/vim-rspec"]
+	path = config/vim/common/bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "config/vim/common/bundle/vim-rubocop"]
+	path = config/vim/common/bundle/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop.git
+[submodule "config/vim/common/bundle/vim-ruby-debugger"]
+	path = config/vim/common/bundle/vim-ruby-debugger
+	url = git://github.com/astashov/vim-ruby-debugger.git
+[submodule "config/vim/common/bundle/vim-ruby-doc"]
+	path = config/vim/common/bundle/vim-ruby-doc
+	url = https://github.com/lucapette/vim-ruby-doc.git
+[submodule "config/vim/common/bundle/vim-ruby-refactoring"]
+	path = config/vim/common/bundle/vim-ruby-refactoring
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "config/vim/common/bundle/vim-seeing-is-believing"]
+	path = config/vim/common/bundle/vim-seeing-is-believing
+	url = https://github.com/hwartig/vim-seeing-is-believing.git
+[submodule "config/vim/common/bundle/vim-slack"]
+	path = config/vim/common/bundle/vim-slack
+	url = https://github.com/heavenshell/vim-slack.git
+[submodule "config/vim/common/bundle/vim-sneak"]
+	path = config/vim/common/bundle/vim-sneak
+	url = https://github.com/justinmk/vim-sneak.git
+[submodule "config/vim/common/bundle/vim-speeddating"]
+	path = config/vim/common/bundle/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
+[submodule "config/vim/common/bundle/vim-surround"]
+	path = config/vim/common/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "config/vim/common/bundle/vim-textobj-rubyblock"]
+	path = config/vim/common/bundle/vim-textobj-rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "config/vim/common/bundle/vim-tutor-mode"]
+	path = config/vim/common/bundle/vim-tutor-mode
+	url = https://github.com/fmoralesc/vim-tutor-mode.git
+[submodule "config/vim/common/bundle/vim-unite-history"]
+	path = config/vim/common/bundle/vim-unite-history
+	url = https://github.com/thinca/vim-unite-history.git
+[submodule "config/vim/common/bundle/VimCalc"]
+	path = config/vim/common/bundle/VimCalc
+	url = https://github.com/gregsexton/VimCalc
+[submodule "config/vim/common/bundle/vimcommander"]
+	path = config/vim/common/bundle/vimcommander
+	url = https://github.com/lpenz/vimcommander.git
+[submodule "config/vim/common/bundle/vimdir.vim"]
+	path = config/vim/common/bundle/vimdir.vim
+	url = https://github.com/c0r73x/vimdir.vim.git
+[submodule "config/vim/common/bundle/vimshell.vim"]
+	path = config/vim/common/bundle/vimshell.vim
+	url = https://github.com/Shougo/vimshell.vim.git
+[submodule "config/vim/common/bundle/vimux"]
+	path = config/vim/common/bundle/vimux
+	url = https://github.com/benmills/vimux.git
+[submodule "config/vim/common/bundle/webapi-vim"]
+	path = config/vim/common/bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim.git
+[submodule "config/tmux/plugins/tmux-sensible"]
+	path = config/tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "config/zprezto"]
+	path = config/zprezto
+	url = https://github.com/sorin-ionescu/prezto.git
+[submodule "config/vim/common/bundle/vim-mustache-handlebars"]
+	path = config/vim/common/bundle/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars
+[submodule "config/vim/common/bundle/NrrwRgn"]
+	path = config/vim/common/bundle/NrrwRgn
+	url = https://github.com/chrisbra/NrrwRgn
+[submodule "config/vim/common/bundle/pivotaltracker.vim"]
+	path = config/vim/common/bundle/pivotaltracker.vim
+	url = https://github.com/hauleth/pivotaltracker.vim.git
+[submodule "config/vim/common/bundle/promptline.vim"]
+	path = config/vim/common/bundle/promptline.vim
+	url = https://github.com/edkolev/promptline.vim.git
+[submodule "config/vim/common/bundle/sparkup"]
+	path = config/vim/common/bundle/sparkup
+	url = https://github.com/rstacruz/sparkup.git
+[submodule "config/vim/common/bundle/splitjoin.vim"]
+	path = config/vim/common/bundle/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "config/vim/common/bundle/supertab"]
+	path = config/vim/common/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "config/vim/common/bundle/sweet-rspec-vim"]
+	path = config/vim/common/bundle/sweet-rspec-vim
+	url = https://github.com/duskhacker/sweet-rspec-vim.git
+[submodule "config/vim/common/bundle/syntastic"]
+	path = config/vim/common/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "config/vim/common/bundle/tcomment_vim"]
+	path = config/vim/common/bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "config/vim/common/bundle/vim-snipmate"]
+	path = config/vim/common/bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate
+[submodule "config/vim/common/bundle/taglist.vim"]
+	path = config/vim/common/bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim
+[submodule "config/vim/common/bundle/targets.vim"]
+	path = config/vim/common/bundle/targets.vim
+	url = https://github.com/wellle/targets.vim
+[submodule "config/vim/common/bundle/tslime.vim"]
+	path = config/vim/common/bundle/tslime.vim
+	url = https://github.com/jimmyharris/tslime.vim
+[submodule "config/vim/common/bundle/neomru.vim"]
+	path = config/vim/common/bundle/neomru.vim
+	url = https://github.com/Shougo/neomru.vim
+[submodule "config/vim/common/bundle/vim-airline"]
+	path = config/vim/common/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "config/vim/common/bundle/ultisnips"]
+	path = config/vim/common/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "config/vim/common/bundle/gundo.vim"]
+	path = config/vim/common/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "config/vim/common/bundle/dbext.vim"]
+	path = config/vim/common/bundle/dbext.vim
+	url = https://github.com/jonathanfilip/vim-dbext
+[submodule "config/vim/common/bundle/ZoomWin"]
+	path = config/vim/common/bundle/ZoomWin
+	url = https://github.com/vim-scripts/ZoomWin
+[submodule "config/vim/common/bundle/sum.vim"]
+	path = config/vim/common/bundle/sum.vim
+	url = https://github.com/vim-scripts/sum.vim
+[submodule "config/vim/common/bundle/tabular"]
+	path = config/vim/common/bundle/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "config/vim/common/bundle/vim-bundler"]
+	path = config/vim/common/bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler
+[submodule "config/vim/common/bundle/vim-buffersaurus"]
+	path = config/vim/common/bundle/vim-buffersaurus
+	url = https://github.com/jeetsukumaran/vim-buffersaurus
+[submodule "config/vim/common/bundle/vim-emblem"]
+	path = config/vim/common/bundle/vim-emblem
+	url = https://github.com/yalesov/vim-emblem
+[submodule "config/vim/common/bundle/vim-indent-guides"]
+	path = config/vim/common/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "config/vim/common/bundle/vim-repeat"]
+	path = config/vim/common/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "config/vim/common/bundle/vim-ruby"]
+	path = config/vim/common/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "config/vim/common/bundle/vim-symbols-strings"]
+	path = config/vim/common/bundle/vim-symbols-strings
+	url = https://github.com/rorymckinley/vim-symbols-strings
+[submodule "config/vim/common/bundle/vim-table-mode"]
+	path = config/vim/common/bundle/vim-table-mode
+	url = https://github.com/dhruvasagar/vim-table-mode
+[submodule "config/vim/common/bundle/vim-textobj-underscore"]
+	path = config/vim/common/bundle/vim-textobj-underscore
+	url = https://github.com/lucapette/vim-textobj-underscore
+[submodule "config/vim/common/bundle/vim-textobj-user"]
+	path = config/vim/common/bundle/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user
+[submodule "config/vim/common/bundle/vim-tmux-navigator"]
+	path = config/vim/common/bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "config/vim/common/bundle/vim-vinegar"]
+	path = config/vim/common/bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "config/vim/common/bundle/vim-visual-increment"]
+	path = config/vim/common/bundle/vim-visual-increment
+	url = https://github.com/triglav/vim-visual-increment
+[submodule "config/vim/common/bundle/vim-vividchalk"]
+	path = config/vim/common/bundle/vim-vividchalk
+	url = https://github.com/tpope/vim-vividchalk
+[submodule "config/vim/common/bundle/vimfiler.vim"]
+	path = config/vim/common/bundle/vimfiler.vim
+	url = https://github.com/Shougo/vimfiler.vim
+[submodule "config/vim/common/bundle/vimoutliner"]
+	path = config/vim/common/bundle/vimoutliner
+	url = https://github.com/vimoutliner/vimoutliner
+[submodule "config/vim/common/bundle/vimproc.vim"]
+	path = config/vim/common/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim
+[submodule "config/tmux/plugins/tmux-copycat"]
+	path = config/tmux/plugins/tmux-copycat
+	url = https://github.com/tmux-plugins/tmux-copycat
+[submodule "config/tmux/plugins/tmux-fingers"]
+	path = config/tmux/plugins/tmux-fingers
+	url = https://github.com/Morantron/tmux-fingers
+[submodule "config/tmux/plugins/tmux-fpp"]
+	path = config/tmux/plugins/tmux-fpp
+	url = https://github.com/tmux-plugins/tmux-fpp
+[submodule "config/tmux/plugins/tmux-open"]
+	path = config/tmux/plugins/tmux-open
+	url = https://github.com/tmux-plugins/tmux-open
+[submodule "config/tmux/plugins/tmux-resurrect"]
+	path = config/tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+[submodule "config/tmux/plugins/tmux-yank"]
+	path = config/tmux/plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank
+[submodule "config/tmux/plugins/tpm"]
+	path = config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "config/zsh-nvm"]
+	path = config/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm

@@ -1,0 +1,375 @@
+
+set rtp^=~/.config/vim/common
+set rtp+=/usr/local/opt/fzf
+
+" pivotaltracker.vim
+let g:pivotaltracker_token = "f55676c755523a6382a4b6a45031e712"
+let g:pivotaltracker_id = "960334"
+let g:pivotaltracker_name = "michaelgraham3"
+" let g:pivotaltracker_filter = ""
+"
+
+" install pathogen
+
+execute pathogen#infect('~/.config/vim/common/bundle/{}')
+
+set nocompatible        " Use Vim defaults (much better!)
+set bs=2                " allow backspacing over everything in insert mode
+set history=500         " keep 50 lines of command line history
+set ruler               " show the cursor position all the time
+
+set linebreak
+
+" let mapleader = ","
+let mapleader = "\\"
+map <space> <leader>
+
+
+" Only do this part when compiled with support for autocommands
+if has("autocmd")
+  autocmd BufRead * set tw=130
+  autocmd BufRead * nohls
+  autocmd BufRead * set number
+
+  " autocmd BufRead *.pl,*.pm,*.t,*.cgi" AlignCtrl =w = => ,
+  " autocmd BufRead *.rb AlignCtrl =w = => ,
+  
+  " In text files, always limit the width of text to 78 characters
+  autocmd BufRead *.txt set tw=78
+  autocmd BufRead *.txt set nonumber
+  autocmd BufRead time_log* set tw=130
+  autocmd BufRead tmpmsg.* set tw=72
+  autocmd BufRead tmpmsg.* set ft=mail
+
+  autocmd BufRead *.scr setfiletype scurvy
+  autocmd BufRead *.script setfiletype scurvyScript
+  autocmd BufRead *.script.txt setfiletype scurvyScript
+  
+  autocmd BufRead *.astroid@*.none setfiletype mail
+  
+  autocmd FileType mail set fileencoding=utf-8
+  autocmd FileType mail set enc=utf-8
+  autocmd FileType mail set ff=unix
+  autocmd FileType mail set tw=80
+
+  autocmd BufRead *.js setfiletype javascript
+  autocmd BufRead *.js setl fen
+  
+  " When editing a file, always jump to the last cursor position
+  autocmd BufReadPost * if line("'\"") | exe "'\"" | endif
+
+  autocmd FileType ruby setlocal sw=2
+  autocmd FileType ruby setlocal sts=2 
+  autocmd FileType ruby setlocal tabstop=2 
+  
+  autocmd FileType javascript call JavaScriptFold()
+  
+  " does not yet work - FIXME
+  " autocmd .git/index set completefunc=pivotaltracker#stories
+  
+  augroup myvimrc
+    autocmd!
+    " autocmd BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc,init.vim,mag_keys.vim source $MYVIMRC | if has('gui_running') | source $MYGVIMRC | endif | echom "Reloaded configuration"
+    autocmd! BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc,init.vim,mag_keys.vim source $MYVIMRC | echom "Reloading Configuration" | if has('gui_running') | source $MYVIMRC | endif | echom "Reloaded Configuration"
+  augroup END
+
+endif
+
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch!
+endif
+
+if &term=="xterm"
+     set t_Co=8
+     set t_Sb=^[4%dm
+     set t_Sf=^[3%dm
+endif
+
+
+set hid
+set ve=all
+set mousemodel=popup
+set ignorecase smartcase
+set incsearch                 
+             
+source $VIMRUNTIME/menu.vim
+set wildmenu
+set cpo-=<
+set wcm=<C-Z>                                        
+
+
+
+" useful in terminal version of vim:
+if !has("gui_running")
+  :hi CursorLine   cterm=NONE ctermbg=gray ctermfg=black 
+  " :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+  " :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+  " set the cursor to a vertical line in insert mode and a solid block
+  " in command mode
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+  " inoremap <special> <Esc> <Esc>hl
+  set guicursor+=i:blinkwait0
+endif
+
+" too slow on my OSX box
+" FIXME: make a plugin that highlights cursorline without using syntax highlighting
+set nocursorline
+
+
+" include michael's keyboard mappings from vimrc
+" If on macvim, they are included from ~/.vim/gvimrc
+"if (!has('gui_macvim'))
+  runtime mag_keys.vim
+"endif
+
+let g:mustache_abbreviations = 1
+let g:ruby_debugger_debug_mode = 1
+
+
+
+let g:CommandTHighlightColor = "Yellow"
+let g:CommandTWildIgnore=&wildignore . "vendor/bundler/*,,doc/*,html/*,frontend/node_modules/*,frontend/bower_components/*,public/system/*,frontend/tmp/*,frontend/dist/*,frontend/.sass-cache/*,frontend/coverage/*,frontend/*.log"  
+
+let g:ruby_debugger_default_script = 'bin/server'
+
+let g:ack_default_options = " --ignore-dir=.yardoc --ignore-dir=html --ignore-dir=doc --ignore-dir=vendor --ignore-dir=log --ignore-dir=public/assets --ignore-dir=tmp"
+
+set iskeyword=@,48-57  "wordchars are letters and digits 
+set iskeyword+=_
+set history=1000         " keep 50 lines of command line history
+set textwidth=130
+
+"highlight Search guibg=white
+set viminfo='200,\"500,:1000,/1000    " read/write a .viminfo file, don't store more
+set viminfo+=n~/.config/vim/common/viminfo
+
+set undofile            "save undo history persistently
+set undodir=~/.config/vim/common/undo "save undo files here
+
+let g:proj_flags='gimst'
+
+
+" set vb t_vb=
+set nosol
+
+" disable rails' automatic dbext config from /config/database.yml
+let g:rails_no_dbext=1
+
+" dbext configuration
+" let g:dbext_default_profile_mysql_local_DBI = 'type=DBI:user=root:passwd=soulx8diet:driver=mysql:conn_parms=database=rewardops;host=localhost'
+
+
+" let b:dbext_{key} = get(dict,key,'')
+
+
+set background=dark
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
+" colorscheme solarized
+colorscheme jellybeans
+hi clear SignColumn
+
+" if has("gui_running")
+"   set guifont=Monospace\ 8
+" endif
+
+" make sure that syntastic uses the current rbenv ruby 
+" let g:syntastic_ruby_mri_exec =  '/home/michael/.rbenv/shims/ruby'
+" let g:syntastic_ruby_mri_exec =  '/home/michael/.rbenv/shims/ruby'
+" osx
+let g:syntastic_ruby_mri_exec = '/Users/michael/.rbenv/shims/ruby'
+
+" Unite
+" if executable('ack-grep')
+"     let g:unite_source_grep_command = 'ack-grep'
+"     let g:unite_source_grep_default_opts = '-i --no-heading --no-color -k -H'
+"     let g:unite_source_grep_recursive_opt = ''
+" endif
+
+if executable('ag')
+  " echo "using ag"
+  " Use ag in unite grep source.
+  let g:unite_source_grep_command = 'ag'
+  let g:unite_source_grep_default_opts =
+  \ '-i --line-numbers --nocolor --nogroup --hidden --ignore ' .
+  \  '''.hg'' --ignore ''.svn'' --ignore ''.git'' --ignore ''.bzr'' ' .
+  \  ' --ignore ''.yardoc'' --ignore ''html'' --ignore ''doc'' ' .
+  \  ' --ignore ''vendor'' --ignore ''log'' --ignore ''public/assets'' ' .
+  \  ' --ignore ''tmp'' ' .
+  \  ' --ignore ''frontend/vendor'' ' .
+  \  ' --ignore ''frontend/bower_components'' ' .
+  \  ' --ignore ''frontend/node_modules'' '
+  let g:unite_source_grep_recursive_opt = ''
+elseif executable('pt')
+  " echo "using pt"
+" if executable('pt')
+  " Use pt in unite grep source.
+  " https://github.com/monochromegane/the_platinum_searcher
+  let g:unite_source_grep_command = 'pt'
+  let g:unite_source_grep_default_opts = '--nogroup --nocolor'
+  let g:unite_source_grep_recursive_opt = ''
+elseif executable('ack-grep')
+  echo "using ack-grep"
+  " Use ack in unite grep source.
+  let g:unite_source_grep_command = 'ack-grep'
+  let g:unite_source_grep_default_opts = " --ignore-dir=.yardoc --ignore-dir=html --ignore-dir=doc --ignore-dir=vendor --ignore-dir=log --ignore-dir=public/assets --ignore-dir=frontend/vendor --ignore-dir=frontend/bower_components --ignore-dir=frontend/node_modules --ignore-dir=tmp"
+  let g:unite_source_grep_recursive_opt = ''
+else
+  " echo "no search tool found"
+endif
+
+let g:unite_source_grep_max_candidates = 10000
+
+call unite#filters#sorter_default#use(['sorter_selecta', 'sorter_rank'])
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#custom#source('file_mru','sorters','sorter_none')
+let g:unite_enable_start_insert=1
+let g:unite_source_history_yank_enable=1
+
+
+" don't start with whitespace highlighting enabled
+autocmd BufReadPre,BufNewFile * let b:better_whitespace_enabled=0
+autocmd BufReadPre,BufNewFile * DisableWhitespace
+
+
+" don't enable whitespace highlighting for unite buffers
+let g:better_whitespace_filetypes_blacklist=['unite']
+
+" vim-gitgutter:  off by default
+let g:gitgutter_enabled = 0
+" vim-gitgutter:  highlight changed lines
+
+" FIXME: broken
+" :GitGutterLineHighlightsEnable
+
+autocmd BufReadPre,BufNewFile * 
+    \ highlight GitGutterAdd guifg=white guibg=grey | 
+    \ highlight GitGutterChange guifg=white guibg=grey | 
+    \ highlight GitGutterDelete guifg=white guibg=grey | 
+    \ highlight GitGutterChangeDelete guifg=white guibg=grey | 
+    \ call gitgutter#highlight#define_highlights() | 
+    \ :GitGutterLineHighlightsEnable
+
+let g:gitgutter_sign_added = '++'
+let g:gitgutter_sign_modified = '~~'
+let g:gitgutter_sign_removed = '--'
+
+" call gitgutter#highlight#define_highlights()
+
+
+
+" set tab-completion to be more like bash:
+" set wildmode=longest,list,full
+set wildmode=longest,list
+
+" let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+let g:rspec_command = "call Send_to_Tmux(\"RSpecConsole.run '{spec}'\n\")"
+
+" Default tmux session names for tslime   (used by rspec.vim)
+let g:tmux_sessionname=0
+let g:tmux_windowname=3
+let g:tmux_panenumber=0
+
+" let $XIKI_DIR = "/home/michael/apps/xiki"       
+" source /home/michael/apps/xiki/misc/vim/xiki.vim 
+
+
+
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#show_tabs = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+
+let g:airline_inactive_collapse=0
+let g:airline#extensions#branch#displayed_head_limit = 12
+" let g:airline#extensions#default#section_truncate_width = {
+"     \ 'b': 10,
+"     \ 'c': 60,
+"     \ }
+
+" FIXME disabled temporarily due to performance problems
+" autocmd BufRead * AirlineTheme solarized
+
+
+" use ycm semantic completion, but not its instant completion
+" let g:ycm_min_num_of_chars_for_completion=99
+" might turn this off if I decide to enable instant completion 
+let g:ycm_complete_in_strings=0
+
+" completion settings
+" set completeopt=longest,menuone
+
+
+let g:pad#dir = "~/gtd/notes/"
+
+command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+	 	\ | wincmd p | diffthis
+
+set diffopt+=vertical
+
+
+
+let g:slack_incoming_token = 'xoxp-4743982757-4722969994-4741496990-9fe945'
+let g:slack_fileupload_token = 'xoxp-4743982757-4722969994-4741496990-9fe945'
+
+
+let g:sneak#streak = 1
+let g:sneak#use_ic_scs = 1
+
+" make cursor not jump left after leaving insert mode
+" (this messes up some of my MAG_delword mappings - consider fixing it)
+" au InsertLeave * if (getpos('.')[2] > 1) | call cursor([getpos('.')[1], getpos('.')[2]+1])
+
+
+let g:csv_nomap_cr = 1
+let g:csv_nomap_up = 1
+let g:csv_nomap_down = 1
+let g:csv_nomap_j = 1
+let g:csv_nomap_k = 1
+
+let g:tomato#show_clock = 1
+let g:tomato#show_countdown = 1
+let g:tomato#interval = 1 * 60
+
+set noerrorbells 
+set novisualbell
+set t_vb=
+autocmd! GUIEnter * set vb t_vb=
+
+
+set tags+=gems.tags
+
+
+" this was a (failed) experiment to make a faster cursorline
+" let g:foo = 0
+" function! Hihi()
+"   if g:foo > 0 
+"     call matchdelete(g:foo) 
+"   endif 
+"   let g:foo=matchaddpos('cursorline', getcurpos())
+" endfunction
+" 
+" autocmd CursorMovedI * call Hihi()
+
+
+
+" nmap <D-Up> [e
+" inoremap <D-Up> <ESC><ESC>[ei
+" nmap <D-Down> ]e
+" inoremap <D-Down> <ESC><ESC>]ei
+" 
+" " Bubble multiple lines (using unimpaired.vim)
+" vmap <C-Up> [egv
+" vmap <C-Down> ]egv
+" 
+" " OSX: Bubble multiple lines (using unimpaired.vim)
+" vmap <D-Up> [egv
+" vmap <D-Down> ]egv
+

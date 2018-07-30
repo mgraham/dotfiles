@@ -1,0 +1,26 @@
+- link:
+    ~/.config/zsh-nvm:
+      create: true
+      path: config/zsh-nvm
+    ~/.config/vim:
+      create: true
+      path: config/vim
+    ~/.vimrc:
+      relink: true
+      path: config/vimrc
+    ~/.tmux:
+      create: true
+      path: config/tmux
+    ~/.zprezto:
+      create: true
+      path: config/zprezto
+    ~/.zpreztorc:
+      create: true
+      path: config/zpreztorc
+    ~/.zshrc:
+      create: true
+      path: config/zshrc
+    ~/.tmux.conf:
+      relink: true
+      path: config/tmux.conf
+

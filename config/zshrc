@@ -1,0 +1,158 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+
+# Customize to your needs...
+
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt NO_BEEP
+setopt BASH_AUTO_LIST
+export DISABLE_AUTO_TITLE=true
+
+plugins=(git)
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ll='ls -l'
+alias la='ls -A'
+
+export ORPHEUS=orpheus.themichaelgraham.com
+# this is now a script
+# alias getmail="ssh -p 22 michael@$ORPHEUS getmail"
+# alias mailme='getmail; offlineimap; newmail'
+
+#Uncomment soon
+#alias vi='/usr/bin/gvim --remote'
+#alias vim='/usr/bin/gvim --remote'
+
+# alias e='/usr/bin/gvim --servername personal --remote'
+# alias e='~/bin/gvim-personal-nowait'
+
+export MYVIMRC=~/.config/vim/common/vimrc
+alias e='~/bin/vim-nowait'
+
+# alias se='sudo /usr/bin/gvim --servername personal --remote'
+
+# Uncomment soon
+#alias svi='sudo /usr/bin/gvim'
+#alias svim='sudo /usr/bin/gvim'
+
+alias pgr='pgrep -alfi'
+
+export PATH=~/.rbenv/bin:$PATH
+
+#eval "$(rbenv init -)"
+
+#export EDITOR='/usr/bin/gvim --servername personal --remote-wait'
+export EDITOR='~/bin/gvim-personal-nowait'
+
+# This line was appended by KDE
+# Make sure our customised gtkrc file is loaded.
+# (This is no longer needed from version 0.8 of the theme engine)
+# export GTK2_RC_FILES=$HOME/.gtkrc-2.0
+
+export WCM_ROOT=/var/www/wcm4/base/mgraham
+export PERL5LIB=/var/www/wcm4/base/mgraham/wcm-shared/app-lib
+alias chk='perl -I/var/www/wcm4/emerald-remote/lib /var/www/wcm4/emerald-remote/bin/content-checker.pl --config=/var/www/wcm4/emerald-remote/conf/content-checker.conf'
+
+alias emerald-root='. ~/bin/set-emerald-root'
+alias ontime-root='. ~/bin/set-ontime-root'
+
+# echo SSH_AUTH_SOCK=$SSH_AUTH_SOCK\; export SSH_AUTH_SOCK\; > ~/.keychain/${HOSTNAME}-sh
+# echo SSH_AGENT_PID=$SSH_AGENT_PID\; export SSH_AGENT_PID\; >> ~/.keychain/${HOSTNAME}-sh
+
+# LINUX ONLY
+#export VST_PATH=/Users/michael/.vst
+
+
+### Added by the Heroku Toolbelt
+# export PATH="/usr/local/heroku/bin:$PATH"
+
+
+
+alias be='bundle exec'
+alias rs='bundle exec rspec'
+alias rspec='~/bin/bundle_exec_rspec'
+
+
+export NVM_DIR="/Volumes/OSXHOME/Users/michael/.nvm"
+source ~/.config/zsh-nvm/zsh-nvm.plugin.zsh
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+export SLACK_TOKEN='xoxp-4743982757-4722969994-4741496990-9fe945'
+
+# export LESS='--quit-if-one-screen'
+
+# disaable middle mouse button paste
+# xinput set-button-map 11 1 0 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22       
+# xinput set-button-map 16 1 0 3 4 5 6 7 
+
+alias gdd='git difftool --dir-diff'
+alias gw='git diff --check'
+
+# LINUX ONLY
+# ~/bin/xbindkeys-restart
+
+export PATH=~/bin:$PATH
+export PATH=~/.local/bin:$PATH
+
+eval "$(rbenv init -)"
+
+
+PATH="/Users/michael/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/michael/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/michael/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/michael/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/michael/perl5"; export PERL_MM_OPT;
+
+PYTHONPATH=~/.local/lib/python2.7/site-packages/
+
+
+alias gst='git status'
+alias gcb='git checkout -b'
+alias gl='git pull'
+alias gpsup='git push --set-upstream origin $(git-branch-current)'
+
+
