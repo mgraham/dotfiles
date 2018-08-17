@@ -313,9 +313,6 @@
 [submodule "config/vim/common/bundle/vim-airline"]
 	path = config/vim/common/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "config/vim/common/bundle/ultisnips"]
-	path = config/vim/common/bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
 [submodule "config/vim/common/bundle/gundo.vim"]
 	path = config/vim/common/bundle/gundo.vim
 	url = https://github.com/sjl/gundo.vim
