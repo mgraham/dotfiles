@@ -406,3 +406,6 @@
 [submodule "config/zsh-nvm"]
 	path = config/zsh-nvm
 	url = https://github.com/lukechilds/zsh-nvm
+[submodule "config/vim/common/bundle/vim-unimpaired"]
+	path = config/vim/common/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
